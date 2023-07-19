@@ -32,8 +32,5 @@ class AppTheme {
         fontWeight: FontWeight.w700,
       ),
     ),
-    floatingActionButtonTheme: const FloatingActionButtonThemeData(
-      backgroundColor: Pallete.greenColor,
-    ),
   );
 }
