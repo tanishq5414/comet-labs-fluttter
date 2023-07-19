@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "249731818010",
+    "project_id": "znews-4e8bf",
+    "storage_bucket": "znews-4e8bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:249731818010:android:3e7c20e664efd767fce7a3",
+        "android_client_info": {
+          "package_name": "com.example.cometlabs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "249731818010-ukiqs7o80p9mi4als3revihq40stutqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC84zZ1ffsRVB4kWiuSQiMlPA5n-iI4row"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "249731818010-ukiqs7o80p9mi4als3revihq40stutqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

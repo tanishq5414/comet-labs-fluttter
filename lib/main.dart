@@ -1,6 +1,7 @@
 import 'package:cometlabs/app_theme.dart';
 import 'package:cometlabs/features/home/bottom_navigator.dart';
 import 'package:cometlabs/features/home/home.dart';
+import 'package:cometlabs/features/splash/splashscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -58,7 +59,7 @@ class _MyAppState extends ConsumerState<MyAppView> {
       title: 'Companion',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.theme,
-      home: const BottomNavigationBarWidget(),
+      home: SplashScreen(),
     );
   }
 }

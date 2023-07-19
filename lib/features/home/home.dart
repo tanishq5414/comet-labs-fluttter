@@ -1,4 +1,5 @@
 import 'package:appinio_swiper/appinio_swiper.dart';
+import 'package:cometlabs/core/core.dart';
 import 'package:cometlabs/features/news/components/news_card_component.dart';
 import 'package:cometlabs/features/news/controller/newscontroller.dart';
 import 'package:cometlabs/model/news_model.dart';
@@ -75,6 +76,7 @@ class HomePageScreenState extends ConsumerState<HomePageScreen> {
                               ref
                                   .read(newsControllerProvider.notifier)
                                   .fetchNews(context);
+                              showSnackBar(context, 'Refreshing news');
                             },
                             icon: Icon(Icons.refresh_sharp,
                                 color: Pallete.whiteColor),

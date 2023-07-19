@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_octicons/flutter_octicons.dart';
 
 class BottomNavigationBarWidget extends StatefulWidget {
+  static  route() => MaterialPageRoute(builder: (context) => const BottomNavigationBarWidget());
   const BottomNavigationBarWidget({super.key});
 
   @override
