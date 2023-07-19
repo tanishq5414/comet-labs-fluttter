@@ -52,25 +52,29 @@ class _BottomNavigationBarWidgetState extends State<BottomNavigationBarWidget> {
                 child: Container(
                   height: size.height * 0.1,
                   width: size.width,
+
                   color: Colors.transparent,
                   margin: EdgeInsets.only(
                       bottom: size.width * 0.05,
                       right: size.width * 0.2,
                       left: size.width * 0.2),
-                  child: BottomNavigationBar(
-                    items: items,
-                    currentIndex: 0,
-                    selectedItemColor: Pallete.whiteColor,
-                    unselectedItemColor: Pallete.lightGreyColor,
-                    showUnselectedLabels: false,
-                    showSelectedLabels: false,
-                    type: BottomNavigationBarType.fixed,
-                    backgroundColor: Colors.transparent,
-                    onTap: (index) {
-                      setState(() {
-                        selectedIndex = index;
-                      });
-                    },
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(30),
+                    child: BottomNavigationBar(
+                      items: items,
+                      currentIndex: 0,
+                      selectedItemColor: Pallete.whiteColor,
+                      unselectedItemColor: Pallete.lightGreyColor,
+                      showUnselectedLabels: false,
+                      showSelectedLabels: false,
+                      type: BottomNavigationBarType.fixed,
+                      backgroundColor: Colors.grey[900],
+                      onTap: (index) {
+                        setState(() {
+                          selectedIndex = index;
+                        });
+                      },
+                    ),
                   ),
                 ),
               ),

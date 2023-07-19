@@ -4,9 +4,10 @@ import 'package:cometlabs/model/news_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-
 final newsDataProvider = StateProvider<List<NewsModel>?>((ref) => null);
-final newsControllerProvider = StateNotifierProvider<NewsController, bool>((ref) {
+final searchDataProvider = StateProvider<List<NewsModel>?>((ref) => null);
+final newsControllerProvider =
+    StateNotifierProvider<NewsController, bool>((ref) {
   final newsAPI = ref.watch(newsAPIProvider);
   return NewsController(
     ref: ref,
@@ -26,8 +27,17 @@ class NewsController extends StateNotifier<bool> {
     final res = await _newsAPI.fetchNews();
     res.fold(
       (l) => showSnackBar(context, l.message),
-      (newsList) => _ref.read(newsDataProvider.notifier).update((state) => newsList),
+      (newsList) =>
+          _ref.read(newsDataProvider.notifier).update((state) => newsList),
+    );
+  }
+
+  Future<void> searchNews(BuildContext context, String query) async {
+    final res = await _newsAPI.searchNews(query);
+    res.fold(
+      (l) => showSnackBar(context, l.message),
+      (newsList) =>
+          _ref.read(searchDataProvider.notifier).update((state) => newsList),
     );
   }
 }
-

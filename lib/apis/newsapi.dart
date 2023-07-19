@@ -14,7 +14,19 @@ class NewsAPI {
   FutureEither<List<NewsModel>> fetchNews() async {
     try {
       final response = await _dio.get(newsUrl);
-      // print(response.data);
+      final newsDataList = List<Map<String, dynamic>>.from(response.data['articles']);
+      final newsList = newsDataList
+          .map((newsData) => NewsModel.fromJson(newsData))
+          .toList();
+      return right(newsList);
+    } catch (e, st) {
+      return left(Failure(e.toString(), st));
+    }
+  }
+
+  FutureEither<List<NewsModel>> searchNews(String query) async {
+    try {
+      final response = await _dio.get(searchUrl(query));
       final newsDataList = List<Map<String, dynamic>>.from(response.data['articles']);
       final newsList = newsDataList
           .map((newsData) => NewsModel.fromJson(newsData))
