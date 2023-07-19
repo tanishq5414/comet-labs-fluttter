@@ -5,7 +5,7 @@ import 'package:cometlabs/model/news_model.dart';
 import 'package:cometlabs/pallete.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:swipe_cards/swipe_cards.dart';
+
 
 class HomePageScreen extends ConsumerStatefulWidget {
   const HomePageScreen({super.key});
@@ -69,9 +69,20 @@ class HomePageScreenState extends ConsumerState<HomePageScreen> {
                                 fontWeight: FontWeight.w300,
                                 color: Pallete.lightGreyColor),
                           ),
+                          const Spacer(),
+                          IconButton(
+                            onPressed: () {
+                              ref
+                                  .read(newsControllerProvider.notifier)
+                                  .fetchNews(context);
+                            },
+                            icon: Icon(Icons.refresh_sharp,
+                                color: Pallete.whiteColor),
+                          ),
+                          SizedBox(width: size.width * 0.05),
                         ],
                       ),
-                      SizedBox(height: size.height * 0.02),
+                      SizedBox(height: size.height * 0.01),
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 5),
                         child: NewsCardComponent(size: size, news: news),

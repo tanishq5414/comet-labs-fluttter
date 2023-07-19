@@ -86,6 +86,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.2"
+  flutter_octicons:
+    dependency: "direct main"
+    description:
+      name: flutter_octicons
+      sha256: b6de4caa500af744328894bd8677f2683183333c0591d757f047fc2f807c4268
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.37.0"
   flutter_riverpod:
     dependency: "direct main"
     description:
@@ -237,14 +245,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
-  swipe_cards:
-    dependency: "direct main"
-    description:
-      name: swipe_cards
-      sha256: c34f28e71e3d4041455aaff49ac4242a79cad0e7d0ec16978f871059f3d956e3
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.0+1"
   term_glyph:
     dependency: transitive
     description:
