@@ -25,12 +25,6 @@ class HomePageScreenState extends ConsumerState<HomePageScreen> {
   Widget build(BuildContext context) {
     var isLoading = ref.watch(newsControllerProvider);
     var news = ref.watch(newsDataProvider) ?? [];
-    print(news);
-    var newsTitle = 'Demand for new homes in the UK hits 14-year high';
-    var publishedTime = 'Updated 2hrs ago';
-    var source = 'The Guardian';
-    var newsDescription =
-        'Demand for new homes in the UK has hit a 14-year high, according to a survey, as the government’s stamp duty holiday and the shift to home working because of the pandemic continue to fuel the housing market boom.';
     var size = MediaQuery.of(context).size;
     return (isLoading)
         ? CircularProgressIndicator()
@@ -91,4 +85,3 @@ class HomePageScreenState extends ConsumerState<HomePageScreen> {
           );
   }
 }
-
