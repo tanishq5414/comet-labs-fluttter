@@ -1,0 +1,1 @@
+const newsUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=05f81e362f1b427a879e7789bca68bbc'; // Replace with the actual API URL
