@@ -30,9 +30,8 @@ ZNews Comet Labs is equipped with a powerful search feature that allows users to
 The development team has put significant effort into creating beautiful and custom-designed UI elements, providing an aesthetically pleasing and visually engaging interface.
 
 ## Screenshots
-![Screenshot_1689875154](https://github.com/tanishq5414/comet-labs-fluttter/assets/69450092/833dd1a8-3211-4cab-be0e-3930b7f78ae8)
-![Screenshot_1689875165](https://github.com/tanishq5414/comet-labs-fluttter/assets/69450092/82425e29-3594-44dc-b772-cf4926823e6e)
-![Screenshot_1689875170](https://github.com/tanishq5414/comet-labs-fluttter/assets/69450092/181aa898-b8ca-4e86-b6fb-b8d5cab12a6c)
+
+![Frame 1](https://github.com/tanishq5414/comet-labs-fluttter/assets/69450092/617558d2-e89a-4155-93a3-c25102c0f88d)
 
 ## How to Run
 
