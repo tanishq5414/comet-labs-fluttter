@@ -1,4 +1,5 @@
 # ZNews Comet Labs - News Application
+(MVC architecture, riverpod state management)
 
 ![ZNews Comet Labs Logo](https://github.com/tanishq5414/comet-labs-fluttter/assets/69450092/88c581f0-d7fe-4dc9-b376-eb78e0b9be47)
 
